@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe "Static pages" do
 
+  subject {page}
+
   let(:base_title) { "Ruby on Rails Tutorial Sample App" }
 
 
@@ -21,6 +23,13 @@ describe "Static pages" do
       visit root_path
       expect(page).not_to have_title('| Home')
     end
+  end
+
+  describe "Contact page" do
+    before { visit contact_path }
+
+    it { should have_selector('h1', text: 'Contact') }
+    it { should have_title(full_title('Contact')) }
   end
 
 
