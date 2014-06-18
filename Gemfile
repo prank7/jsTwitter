@@ -25,6 +25,9 @@ gem 'jbuilder', '1.0.2'
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'bcrypt-ruby'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
