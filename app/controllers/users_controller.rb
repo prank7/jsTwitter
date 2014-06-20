@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   	if @user.save
       sign_in @user
-  		flash[:success] = "Welcome to the Sample App! Please follow any User"
+  		flash[:success] = "Welcome to JsTwitter! Please follow any User"
       redirect_to @user
   	else
   		render 'new'                    #new here means new action ie. new.html.erb in users views
