@@ -15,3 +15,11 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval : 2400,
+         pause: false
+     });
+});

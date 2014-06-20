@@ -14,6 +14,10 @@ html{
   overflow-y: scroll;
 }
 
+body{
+    background-image: image-url("pallettracks.jpeg");
+    background-size: cover;
+    }
 
 
 section {
@@ -79,15 +83,22 @@ p {
 
 /* footer */
 
+
 footer {
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:50px;
+  width:100%;
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  //border-top: 1px solid $grayMediumLight;
+  color: white;
   a {
-    color: $gray;
+    text-align: center;
+    color: white;
     &:hover {
-      color: $grayDarker;
+      color: orange;
     }
   }
   small {
@@ -98,7 +109,8 @@ footer {
     list-style: none;
     li {
       float: left;
-      margin-left: 10px;
+      margin-left: 15px;
+      font-size:18px;
     }
   }
 }
@@ -252,3 +264,32 @@ aside {
     margin-bottom: 5px;
   }
 }
+
+.welcome{
+  height: 410px;
+  background: 0;
+  text-color: green;
+  font-size: 50px;
+}
+
+.welcometext{
+  font-family: "Gotham Narrow SSm",sans-serif,Arial;
+  color: white;
+  margin-top: 30px;  
+  font-size:56px;
+}
+
+.carousel-inner h3{
+  color:white;
+  font-size:34px;
+}
+
+.baadusha{
+  font: italics;
+}
+
+.loginbox{
+  font-size: 24px;
+ background-color: #e3e3e3;
+}
+
