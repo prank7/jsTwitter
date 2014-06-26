@@ -1,7 +1,7 @@
 <li>
 	<% tweet = micropost.content %>
 	<% if tweet.include?('#') %>
-		<% tweet = tweet.gsub(/#(\w+)/, "<a href='/hashtag/\\1'>#\\1</a>").html_safe %>
+		<% tweet = tweet.gsub(/#(\w+)/, "<a href='/hashtag?tag=\\1'>#\\1</a>").html_safe %>
 	<% end %>
   <span class="content"><%= tweet %></span>
   <span class="timestamp">

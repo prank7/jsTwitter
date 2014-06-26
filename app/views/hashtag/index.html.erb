@@ -1,0 +1,27 @@
+<% provide(:title, "hashtag") %>
+<% if signed_in? %>
+   
+	  <div class="row col-md-4">
+	    <aside class="well">
+	      <section>
+	        <%= render 'shared/user_info' %>
+	      </section>
+	       <section>
+	        <%= render 'shared/stats' %>
+	      </section>
+	      <section>
+	        <%= render 'shared/micropost_form' %>
+	      </section>
+
+	    </aside>
+	     </div>
+	    <div class="col-md-8">
+	      <div class="well">
+	      <h3>Tweet Feed</h3>
+	      <% flash.each do |key, value| %>
+        		<div class="alert alert-<%= key %> center"><%= value.html_safe %></div>
+    		<% end %>
+	      <%= render 'shared/feed' %>
+	    </div>
+	  </div>
+<% end %>

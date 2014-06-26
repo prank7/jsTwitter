@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
   
+
+
   resources :users do
     member do
       get :following, :followers
@@ -20,7 +22,7 @@ SampleApp::Application.routes.draw do
   match "/signup", to: 'users#new', via:'get'
   match "/signin", to: 'sessions#new', via: 'get'
   match "signout", to:'sessions#destroy', via:'delete'
-
+  match "/hashtag", to: 'hashtag#index', via:'get'
   root 'static_pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
